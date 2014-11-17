@@ -7,6 +7,9 @@ define(['./_base', './_cli', 'intern'], function(config, cli, intern) {
     // OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
     // capabilities options specified for an environment will be copied as-is
     config.environments = [
+        { browserName: 'internet explorer', version: '11', platform: 'Windows 8.1' },
+        { browserName: 'internet explorer', version: '10', platform: 'Windows 8' },
+        { browserName: 'chrome', version: '34', platform: [ 'OS X 10.9', 'Windows 7'] },
         { browserName: 'firefox', version: '32', platform: [ 'OS X 10.9', 'Windows 7'] }
     ];
 
